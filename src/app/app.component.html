@@ -1,0 +1,74 @@
+<div class="wrapper">
+  <header>
+    <nav class="navbar">
+      <div class="brand">
+        <h2>J<span>D</span></h2>
+      </div>
+      <ul class="menu">
+        <li><a routerLink="" (click)="scrollToElement('home')">Home</a></li>
+        <li><a routerLink="" (click)="scrollToElement('about-me')">About Me</a></li>
+        <li><a routerLink="" (click)="scrollToElement('portfolio')" >Portfolio</a></li>
+        <li><a routerLink="" (click)="scrollToElement('contact')" >Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<section class="home" id="home">
+  <img src="assets/img/personImage.png" alt="dev-image" class="home-image">
+  <div class="home-text">
+    <p class="intro">Hi, I'm</p>
+    <h1 class="name">Juan David</h1>
+    <h2 class="role">Systems Engineering Student</h2>
+    <p class="passion">Passionate about fullstack development</p>
+  </div>
+</section>
+<section class="about-me" id="about-me">
+  <div class="info-content">
+    <h1>About Me</h1>
+    <p>Hello, I'm a 20-year-old systems engineering student in Cali, Colombia. Passionate about technology, I enjoy tackling challenges and exploring innovative solutions. Beyond academics, I love immersing myself in Cali's cultural diversity and seeking new opportunities for growth and learning.</p>
+    <a class="btn" (click)="downloadCV()" >Download CV</a>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <div>
+    <h1>Portfolio</h1>
+    <div class="portfolio-content">
+      <div class="portfolio-item" (click)="openLink('https://jdiazzc3.github.io/JScalculator/calc.html')">
+        <img src="assets/img/calc-image.png" alt="portfolio1" class="portfolio-image">
+        <h2 class="portfolio-title">Calculator</h2>
+        <p class="portfolio-description">Project developed with HTML, CSS, and JavaScript. It is a simple calculator that performs basic arithmetic operations.</p>
+      </div>
+      <div class="portfolio-item" (click)="openLink('')">
+        <img src="assets/img/website-credit-card.png" alt="portfolio2" class="banking-app-image">
+        <h2 class="portfolio-title">Banking App</h2>
+        <p class="portfolio-description">Angular and Java Spring Boot project that simulates a banking application. It allows users to create accounts, make deposits, and transfer money.</p>
+      </div>
+      <div class="portfolio-item" (click)="openLink('')">
+        <img src="assets/img/dashboard-img.png" alt="portfolio3" class="dashboard-image">
+        <h2 class="portfolio-title">Project Management</h2>
+        <p class="portfolio-description">Web application developed with Angular and Flask. It helps users to generate project documentation and client interviews.</p> 
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+<form  [formGroup]="contactForm" class="contact-form">
+  <h1>Contact</h1>
+  <div class="form-container">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required formControlName="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required formControlName="email" autocomplete="off">
+    </div>
+    <div class="message-group">
+      <textarea id="message" name="message" placeholder="Message (remember, short & sweet please)" required formControlName="message"></textarea>
+    </div>
+    <button class="btn" (click)="submitForm()">Send</button>
+  </div>  
+</form>
+
+</section>

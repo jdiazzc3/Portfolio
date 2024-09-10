@@ -1,0 +1,332 @@
+.wrapper {
+    width: 100vw;
+    background-color: #191c32;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.322);
+}
+
+.brand {
+    margin-top: -7px;
+}
+
+.brand span {
+    color: rgb(105, 230, 230);
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active {
+    color: rgb(255, 255, 255);
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #191c32;
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+}
+
+.home {
+    background-color: #f4f4f4; /* Fondo claro para contrastar el texto */
+    display: flex;
+    height: 100%;
+    color: white;
+    padding: 50px; /* Ajusta el espaciado según sea necesario */
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: wrap;
+}
+
+.home-image {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    margin-right: 2rem;
+    border-radius: 50%; /* Hacer la imagen circular, si es apropiado */
+  }
+
+.home .info-content {
+    margin: auto 0;
+}
+
+.home-text {
+    max-width: 600px; /* Limitar el ancho del texto para mejorar la legibilidad */
+}
+  
+.intro {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .name {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #222;
+  }
+  
+  .role {
+    font-size: 24px;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .passion {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #666;
+  }  
+
+.about-me {
+    background-color: #191c32;
+    height: 100%;
+    color: white;
+    padding: 100px; /* Ajusta el espaciado según sea necesario */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.about-me .info-content {
+    max-width: 800px; /* Limita el ancho del contenido para una mejor legibilidad */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.about-me h1 {
+    font-size: 2.5em; /* Ajusta el tamaño de la fuente según sea necesario */
+    margin-bottom: 1rem;
+}
+
+.about-me h2 {
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente según sea necesario */
+    margin-bottom: 20px; /* Agrega espacio inferior */
+}
+
+.about-me p {
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente según sea necesario */
+    line-height: 1.6; /* Ajusta la altura de línea para una mejor legibilidad */
+  
+}
+
+.about-me .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    background: linear-gradient(to right, rgb(32, 185, 185), rgb(59, 3, 150)); /* Cambia a linear-gradient */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about-me .btn:hover {
+    transform: scale(0.95); /* Reduce el tamaño al 90% en el hover */
+}
+
+.portfolio {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.portfolio h1 {
+    font-size: 3em;
+    margin-bottom: 38px;
+    color: #222;
+}
+
+/* Contenido del portfolio */
+.portfolio-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background-color: #f4f4f4;
+    color: #191c32;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-image, .dashboard-image,
+.banking-app-image {
+    width: 200px;
+    height: auto;
+    max-height: 200px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    
+}
+
+.portfolio-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.portfolio-description {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+
+.contact-form {
+    background-color: #191c32;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+}
+
+.contact-form h1{
+    font-size: 2.5em;
+    margin-bottom: 36px;
+    color: #f4f4f4;
+}
+
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+     /* Fondo más oscuro */
+    border-radius: 8px;
+    width: 800px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .message-group {
+    grid-column: span 2; /* Ocupa todo el ancho del grid */
+    position: relative;
+    margin-top: 16px;
+  }
+  
+  .message-group textarea {
+    width: 100%; /* Asegura que el textarea ocupe todo el ancho disponible */
+    height: 150px;
+    resize: none;
+    border: none;
+  }
+
+  ::placeholder {
+    color: #f4f4f4; /* Cambia este valor por el color que desees */
+    opacity: 1; /* Para asegurar que se vea bien en algunos navegadores */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; /* Cambia este valor por el peso de fuente que desees */
+  }
+  
+
+  label {
+    font-size: 16px;
+    color: #f4f4f4;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #f4f4f4;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    outline: none;
+    transition: border-bottom 0.3s ease;
+  }
+  
+  /* input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-bottom: 1px solid #f7f7f7; 
+  }
+   */
+  textarea {
+    height: 150px;
+    resize: none;
+    background-color: #262947;
+    color: #f4f4f4;
+  }
+  
+  .btn {
+    grid-column: 2 / 3;
+    align-self: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: #191c32;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    justify-self: flex-end;
+  }
+  
+  .btn:hover {
+    background-color: #c4c4c4;
+    transform: translate(0, -2px);
+  }
+
+
+
+  
+  @media (max-width: 768px) {
+    .form-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .btn {
+      grid-column: 1;
+      justify-self: center;
+    }
+
+    .portfolio-content {
+      flex-direction: column;
+      align-items: center;
+  }
+  }
+
+
