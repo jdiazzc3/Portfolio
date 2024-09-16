@@ -310,6 +310,14 @@
     transform: translate(0, -2px);
   }
 
+  footer {
+    background-color: #191c32;
+    border-top: 1px solid #333;
+    color: white;
+    text-align: center;
+    padding: 32px;
+  }
+
 
 
   
